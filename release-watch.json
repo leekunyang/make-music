@@ -1,0 +1,18 @@
+{
+  "artist": "Said the Sky",
+  "source": "Spotify",
+  "timezone": "Asia/Taipei",
+  "check_time": "08:00",
+  "frequency": "daily",
+  "notification_channel": "Gmail",
+  "recipient_email": null,
+  "notification_language": "zh-Hant",
+  "status": "pending_setup",
+  "schedule_created": false,
+  "notification_fields": [
+    "artist",
+    "release_title",
+    "release_date",
+    "spotify_url"
+  ]
+}

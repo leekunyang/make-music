@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "dj-fat-release-watch": {
+      "command": "/usr/bin/python3",
+      "args": [
+        "/Users/likunyang/AI人工智能增強/demo/make-music/release-watch-mcp/server.py"
+      ]
+    }
+  }
+}

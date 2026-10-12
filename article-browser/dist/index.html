@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="搜尋與瀏覽你的音樂製作文章收藏。">
+  <title>製作筆記 · Producer Notes</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="mark" aria-hidden="true">▥</span> 製作筆記 <span class="brand-en">PRODUCER NOTES</span></a>
+    <label class="import-button">匯入 JSON<input id="file" type="file" accept=".json,application/json"></label>
+  </header>
+  <main>
+    <section class="hero">
+      <div><p class="eyebrow">YOUR NEXT TRACK STARTS HERE</p><h1>把靈感，<br>留在<span>下一首作品。</span></h1><p class="intro">你的音樂製作閱讀收藏。找到需要的技巧，回到創作。</p></div>
+      <div class="visual" aria-hidden="true"><div class="visual-top">SESSION / READING LIBRARY <span>● READY</span></div><div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="visual-bottom">COLLECT. LEARN. CREATE. <span>↗</span></div></div>
+    </section>
+    <section class="library" aria-labelledby="library-title">
+      <div class="section-top"><div><p class="eyebrow">THE COLLECTION</p><h2 id="library-title">文章收藏 <span id="total">0</span></h2></div><button id="reload" class="quiet">↻ 重新讀取</button></div>
+      <div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜尋標題、作者或標籤…" aria-label="搜尋標題、作者或標籤"></label><label class="sort-label">排序<select id="sort"><option value="newest">日期：新到舊</option><option value="oldest">日期：舊到新</option><option value="title">標題</option></select></label></div>
+      <div id="filters" class="filters" role="group" aria-label="依標籤篩選"></div>
+      <div class="results-line"><span id="result-count" aria-live="polite"></span><span id="source">articles.json</span></div>
+      <p id="status" role="status" hidden></p>
+      <div id="cards" class="cards"></div>
+      <div id="empty" class="empty" hidden><span aria-hidden="true">⌕</span><h3>沒有符合的文章</h3><p>試試其他關鍵字，或清除標籤篩選。</p><button id="reset" class="import-button">清除篩選</button></div>
+    </section>
+  </main>
+  <footer><span>製作筆記 <b>／</b> 為下一次創作收藏。</span><span>PRODUCER NOTES © <span id="year"></span></span></footer>
+</body>
+</html>
